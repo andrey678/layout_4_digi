@@ -1,0 +1,196 @@
+// HEADER
+@media (min-width: 640px) {
+  .header {
+    &__inner {
+      min-height: 100px;
+    }
+  }
+  .container {
+    padding: 0 30px;
+  }
+  .logo__link {
+    margin: 0 0 0 14px;
+  }
+
+  // HEAD
+
+  .head {
+    min-height: 386px;
+    // background-position: -162px center;
+  }
+  .top-slider {
+    &__item {
+      min-height: 386px;
+    }
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+      padding: 50px 0 15px;
+      margin: 0 auto 30px;
+      max-width: 520px;
+    }
+    &__btn {
+      display: block;
+      margin: 0 auto 113px;
+
+      font-size: 18px;
+      background: $accent;
+      color: $bg-color;
+      padding: 16px 45px;
+      border: none;
+      border-radius: 3px;
+    }
+    .slick-dots {
+      bottom: 50px;
+    }
+    .slick-arrow {
+      width: 56px;
+      height: 56px;
+      border: none;
+      position: absolute;
+      right: 0;
+      z-index: 5;
+    }
+    .slick-prev {
+      background: $accent;
+      top: calc(50% - 56px);
+    }
+    .slick-next {
+      background: $bg-color;
+      bottom: calc(50% - 56px);
+    }
+  }
+
+  // Секция CALL
+  .call {
+    // .call__inner
+
+    &__inner {
+    }
+
+    // .call__box
+
+    &__box {
+    }
+
+    // .call__title
+
+    &__title {
+    }
+
+    // .call__text
+
+    &__text {
+    }
+
+    // .call__btn
+
+    &__btn {
+    }
+  }
+  .container {
+  }
+
+  // Секция Services
+  .services {
+    padding: 24px 0 0;
+    // .services__inner
+
+    &__inner {
+    }
+
+    // .services__head
+
+    &__head {
+    }
+
+    // .services__title
+
+    &__title {
+      margin: 0 0 20px 0;
+      padding: 0 0 0 0;
+      &::after {
+        display: none;
+      }
+    }
+
+    // .services__descr
+
+    &__descr {
+      font-size: 24px;
+      padding: 0 0 38px 0;
+      margin: 0 0 31px 0;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100px;
+        height: 8px;
+        background: $accent;
+        bottom: 0;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+      }
+    }
+
+    // .services__text
+
+    &__text {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    // .services__items
+
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -30px;
+    }
+
+    // .services__item
+
+    &__item {
+      min-height: 310px;
+      width: 50%;
+      &:nth-child(even) {
+        border-left: none;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    // .services__item-inner
+
+    &__item-inner {
+    }
+
+    // .services__item-img
+
+    &__item-img {
+    }
+
+    // .services__item-title
+
+    &__item-title {
+    }
+
+    // .services__item-text
+
+    &__item-text {
+    }
+
+    // .services__item-link
+
+    &__item-link {
+    }
+  }
+  .container {
+  }
+  .title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}

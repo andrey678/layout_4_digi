@@ -1,17 +1,315 @@
-// Файл обнуляющих стилей
+//Переменные
+@import "vars";
+// Файл normalize стилей
 @import "normalize.scss";
 // Подключение шрифтов
-// @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;700&family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@700;900&display=swap');
-
 @mixin font($font_name, $file_name, $weight, $style) {
-
-@font-face {
-font-family: $font_name;
-font-display: swap;
-src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
-font-weight: #{$weight};
-font-style: #{$style};
-}
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"),
+      url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
 }
 
 @import "fonts";
+
+//Подключение общих стилей
+@import "global";
+
+//Подключение Slick slider
+@import "slick";
+
+// Секция HEADER
+.header {
+  background: $accent;
+  // .header__inner
+
+  &__inner {
+    min-width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.container {
+  padding: 0 20px;
+}
+
+.logo {
+  // .logo__link
+
+  &__link {
+    margin: 0 0 0 8px;
+  }
+
+  // .logo__img
+}
+.menu {
+  // .menu__btn
+
+  &__btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    background: #ffffff;
+    border: none;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 1px;
+      width: 12px;
+      height: 2px;
+      background: $accent;
+      top: 15px;
+      left: 14px;
+      box-shadow: 0 4px 0 0 $accent, 0 8px 0 0 $accent;
+    }
+  }
+}
+// СЕКЦИЯ HEAD
+.head {
+  background-image: url("../img/Head/bg-head.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  min-height: 193px;
+}
+
+.top-slider {
+  background: rgba(33, 33, 33, 0.5);
+
+  // .top-slider__item
+
+  &__item {
+    color: #ffffff;
+    text-align: center;
+    min-height: 193px;
+  }
+
+  // .top-slider__title
+
+  &__title {
+    @extend %robotocondensed-400;
+    font-size: 28px;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding: 36px 0 28px;
+    max-width: 243px;
+    margin: 0 auto;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 8px;
+      background: $text-color;
+      width: 61px;
+      margin: 0 auto;
+    }
+  }
+  &__text {
+    display: none;
+  }
+  &__btn {
+    display: none;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    .slick-active {
+      button {
+        background: transparent;
+        border: 1px solid #476e4d;
+      }
+    }
+    button {
+      font-size: 0;
+      border: none;
+      background: $accent;
+      padding: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 0 10px;
+    }
+  }
+}
+// СЕКЦИЯ CALL
+.call {
+  background: $accent;
+  padding: 40px 0;
+  color: #ffffff;
+  text-align: center;
+  // .call__inner
+
+  &__inner {
+  }
+
+  // .call__title
+
+  &__title {
+    @extend %roboto-500;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+  }
+
+  // .call__text
+
+  &__text {
+    // @extend %dosis-300;
+    margin: 0 0 40px 0;
+  }
+
+  // .call__btn
+
+  &__btn {
+    padding: 16px 15px;
+    background: $bg-color;
+    color: $accent;
+    font-size: 18px;
+    @extend %roboto-500;
+    border-radius: 3px;
+    border: none;
+    text-transform: uppercase;
+  }
+}
+.container {
+}
+// СЕКЦИЯ SERVICES
+
+.services {
+  padding: 25px 0 40px;
+  text-align: center;
+  color: $accent;
+  // .services__inner
+
+  &__inner {
+  }
+
+  // .services__head
+
+  &__head {
+  }
+
+  // .services__title
+
+  &__title {
+    color: $accent;
+    margin: 0 0 47px 0;
+  }
+
+  // .services__descr
+
+  &__descr {
+    line-height: 24px;
+    font-size: 20px;
+    color: $text-color;
+    margin: 0 0 21px 0;
+  }
+
+  // .services__text
+
+  &__text {
+    color: #797979;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 40px 0;
+  }
+
+  // .services__items
+
+  &__items {
+  }
+
+  // .services__item
+
+  &__item {
+    min-height: 310px;
+    border: 1px solid $bg-color;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 18px;
+    &:last-child {
+      border-bottom: 1px solid $bg-color;
+    }
+    &:hover {
+      .services__item-link,
+      .services__item-text {
+        display: block;
+      }
+      .services__item-img {
+        margin: 0 0 14px 0;
+      }
+      .services__item-title {
+        margin: 0 0 30px 0;
+      }
+      .services__item-inner {
+        border: 4px solid $accent;
+        margin: 18px 0;
+        padding: 25px 20px 5px;
+        min-height: 277px;
+      }
+    }
+  }
+
+  // .services__item-inner
+
+  &__item-inner {
+  }
+
+  // .services__item-img
+
+  &__item-img {
+    margin: 0 0 30px 0;
+  }
+  // .services__item-title
+
+  &__item-title {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    color: $text-color;
+    @extend %robotocondensed-700;
+  }
+
+  // .services__item-text
+
+  &__item-text {
+    display: none;
+    margin: 0 0 17px 0;
+    @extend %dosis-400;
+  }
+
+  // .services__item-link
+
+  &__item-link {
+    display: none;
+    letter-spacing: 2px;
+    color: $accent;
+    @extend %robotocondensed-700;
+    text-transform: uppercase;
+  }
+}
+.container {
+}
+.title {
+}
+
+@import "portrait-640";
+@import "tablet-portrait-768";
+@import "desktop-1024";
+@import "desktop-hd1440";

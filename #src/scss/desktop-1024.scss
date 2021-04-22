@@ -1,0 +1,144 @@
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  //Секция HEAD
+  .top-slider {
+    &__item {
+      min-height: 618px;
+    }
+    &__title {
+      padding: 101px 0 0 0;
+      font-size: 84px;
+      line-height: 84px;
+      letter-spacing: 2px;
+      min-width: 750px;
+    }
+    .slick-dots {
+      bottom: 80px;
+    }
+  }
+  //Секция CALL
+
+  // Секция CALL
+  .call {
+    // .call__inner
+
+    &__inner {
+    }
+
+    // .call__box
+
+    &__box {
+      max-width: 695px;
+    }
+
+    // .call__title
+
+    &__title {
+    }
+
+    // .call__text
+
+    &__text {
+    }
+
+    // .call__btn
+
+    &__btn {
+    }
+  }
+  .container {
+  }
+
+  // Секция services
+  .services {
+    padding: 52px 0 0;
+    // .services__inner
+
+    &__inner {
+    }
+
+    // .services__head
+
+    &__head {
+    }
+
+    // .services__title
+
+    &__title {
+      margin: 0 0 60px 0;
+    }
+
+    // .services__descr
+
+    &__descr {
+      padding: 0 0 46px 0;
+      margin: 0 0 0 40px 0;
+    }
+
+    // .services__text
+
+    &__text {
+      margin: 0 0 32px 0;
+      min-width: 608px;
+    }
+
+    // .services__items
+
+    &__items {
+    }
+
+    // .services__item
+
+    &__item {
+      width: 25%;
+      padding: 0 17px;
+      min-height: 277px;
+      &:nth-child(2),
+      &:nth-child(6) {
+        border-right: none;
+      }
+
+      &:hover {
+        padding: 0 17px;
+        .services__item-inner {
+          margin: 10px 0;
+          min-height: 255px;
+          padding: 21px 9px 5px;
+        }
+      }
+    }
+
+    // .services__item-inner
+
+    &__item-inner {
+    }
+
+    // .services__item-img
+
+    &__item-img {
+    }
+
+    // .services__item-title
+
+    &__item-title {
+    }
+
+    // .services__item-text
+
+    &__item-text {
+    }
+
+    // .services__item-link
+
+    &__item-link {
+    }
+  }
+  .container {
+  }
+  .title {
+  }
+}

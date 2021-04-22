@@ -1,0 +1,150 @@
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+  .logo__link {
+    margin: 0;
+  }
+  .top-slider {
+    &__item {
+      min-height: 465px;
+    }
+    &__title {
+      padding: 87px 0 0;
+      margin: 0 auto 0;
+      &::after {
+        display: none;
+      }
+    }
+    &__text {
+      padding: 25px 0 32px;
+      font-family: "Roboto Condensed", sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px;
+      display: block;
+      max-width: 587px;
+      margin: 0 auto;
+    }
+  }
+
+  // Секция CALL
+  .call {
+    // .call__inner
+    text-align: left;
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    // .call__box
+
+    &__box {
+      max-width: 427px;
+    }
+
+    // .call__title
+
+    &__title {
+    }
+
+    // .call__text
+
+    &__text {
+      margin: 0 0 0 0;
+    }
+
+    // .call__btn
+
+    &__btn {
+    }
+  }
+  .container {
+  }
+
+  // Секция Services
+  .services {
+    padding: 50px 0 0;
+    // .services__inner
+
+    &__inner {
+    }
+
+    // .services__head
+
+    &__head {
+    }
+
+    // .services__title
+
+    &__title {
+      margin: 0 0 30px 0;
+    }
+
+    // .services__descr
+
+    &__descr {
+      text-align: left;
+      &::after {
+        margin-left: 0;
+      }
+    }
+
+    // .services__text
+
+    &__text {
+      text-align: left;
+      margin: 0 0 27px 0;
+    }
+
+    // .services__items
+
+    &__items {
+      margin: 0 -40px;
+    }
+
+    // .services__item
+
+    &__item {
+      padding: 0 65px;
+      min-height: 334px;
+      &:hover {
+        padding: 0 18px;
+        .service__item-inner {
+          min-height: 288px;
+          padding: 35px 60px 5px;
+        }
+      }
+    }
+
+    // .services__item-inner
+
+    &__item-inner {
+    }
+
+    // .services__item-img
+
+    &__item-img {
+    }
+
+    // .services__item-title
+
+    &__item-title {
+    }
+
+    // .services__item-text
+
+    &__item-text {
+    }
+
+    // .services__item-link
+
+    &__item-link {
+    }
+  }
+  .container {
+  }
+  .title {
+  }
+}
