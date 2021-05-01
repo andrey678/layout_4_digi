@@ -308,6 +308,144 @@
 }
 .title {
 }
+// Секция projects
+.project {
+  text-align: center;
+  padding: 20px 0; 
+  background: linear-gradient(180deg, #2b4074 0%, rgba(43, 64, 116, 0) 100%);
+  &__title {
+    color: #ffffff;
+    margin: 0 0 40px 0;
+    &:after {
+      background: #ffffff;
+    }
+  }
+  // .project__title
+
+  &__title {
+  }
+
+  // .project__items
+
+  &__items {
+  }
+
+  // .project__item
+
+  &__item {
+  }
+
+  // .project__item-img
+
+  &__item-img {
+    min-height: 250px;
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+    border-radius: 4px;
+    padding: 12px 14px;
+    &:hover {
+      .project__item-inner{
+      opacity: 1;
+    }
+    }
+  }
+
+  // .project__item-inner
+
+  &__item-inner {
+    display: flex;
+    justify-content: center;
+    min-height: 227px;
+    align-items: center;
+    border-radius: 4px;
+    background: rgba($bg-color, 0.83);
+    opacity: 0;
+    transition: all 0.5s;
+  }
+
+  // .project__item-info
+
+  &__item-info {
+    margin: 0 7px;
+  }
+
+  // .project__item-search
+
+  &__item-search {
+    margin: 0 7px;
+  }
+
+  // .project__item-link
+
+  &__item-link {
+    display: block;
+    padding: 20px 0;
+    letter-spacing: 2px;
+    line-height: 19;
+    color: $accent;
+    @extend %robotocondensed-700;
+  }
+}
+.container {
+}
+.title {
+}
+// Секция TEAM
+
+.team {
+padding: 20px 0 40px;
+text-align: center;
+
+  // .team__inner
+
+  &__inner {
+  }
+
+  // .team__images
+
+  &__images {
+    width: 100px;
+    margin: 0 0 40px 0;
+    border-radius: 4px;
+  }
+
+  // .team__content
+
+  &__content {
+  }
+
+  // .team__title
+
+  &__title {
+    color: $text-color;
+    margin: 0 0 23px 0;
+  }
+
+  // .team__text
+
+  &__text {
+    margin: 0 0 84px 0;
+
+  }
+
+  // .team__btn
+
+  &__btn {
+    border:none;
+    background: $accent;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 21px 26px;
+    color: $bg-color;
+    font-weight: 500;
+  }
+}
+.container {
+}
+.title {
+}
+
 
 @import "portrait-640";
 @import "tablet-portrait-768";

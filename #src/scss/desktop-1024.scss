@@ -141,4 +141,98 @@
   }
   .title {
   }
+
+  // Секция project
+  .project {
+    // .project__title
+
+    &__title {
+    }
+
+    // .project__items
+
+    &__items {
+      justify-content: center;
+    }
+
+    // .project__item
+
+    &__item {
+    }
+
+    // .project__item-img
+
+    &__item-img {
+      margin: 0 12px;
+    }
+
+    // .project__item-inner
+
+    &__item-inner {
+    }
+
+    // .project__item-info
+
+    &__item-info {
+    }
+
+    // .project__item-search
+
+    &__item-search {
+    }
+
+    // .project__item-link
+
+    &__item-link {
+    }
+  }
+  .container {
+  }
+  .title {
+  }
+
+  // Секция TEAM
+
+  .team {
+    padding: 80px 0;
+    // .team__inner
+
+    &__inner {
+    }
+
+    // .team__images
+
+    &__images {
+      width: 395px;
+      margin-right: 60px;
+    }
+
+    // .team__content
+
+    &__content {
+    }
+
+    // .team__title
+
+    &__title {
+      margin-top: 10px;
+      margin-bottom: 19px;
+    }
+
+    // .team__text
+
+    &__text {
+      line-height: 24px;
+      margin-bottom: 12px;
+    }
+
+    // .team__btn
+
+    &__btn {
+    }
+  }
+  .container {
+  }
+  .title {
+  }
 }
