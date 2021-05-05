@@ -258,4 +258,44 @@
   }
   .title {
   }
+
+  // Секция lastnews
+
+  .lastnews {
+    // .lastnews__title
+
+    &__title {
+      font-size: 36px;
+      line-height: 38px;
+    }
+
+    // .lastnews__items
+
+    &__items {
+      padding: 50px 0 40px;
+      margin: 0 50px;
+    }
+
+    // .lastnews__item
+
+    &__item {
+    }
+
+    // .lastnews__item-inner
+
+    &__item-inner {
+    }
+
+    // .lastnews__item-img
+
+    &__item-img {
+    }
+
+    // .lastnews__item-title
+
+    &__item-title {
+    }
+  }
+  
+
 }

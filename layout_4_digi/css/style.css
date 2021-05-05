@@ -4,14 +4,16 @@
 }
 
 .title,
-.top-slider__title {
+.top-slider__title,
+.lastnews__title {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
 }
 
 .services__item-title,
 .services__item-link,
-.project__item-link {
+.project__item-link,
+.lastnews__item-title {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
 }
@@ -976,6 +978,48 @@ body {
   font-weight: 500;
 }
 
+.lastnews {
+  background: #f9f6e5;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.lastnews__title {
+  font-size: 24px;
+  line-height: 38px;
+  color: #4a4a4a;
+}
+
+.lastnews__items {
+  padding: 40px 0 40px 5px;
+}
+
+.lastnews__item {
+  width: 270px;
+  margin: 0 0 20px 0;
+}
+
+.lastnews__item:last-child {
+  margin: 0;
+}
+
+.lastnews__item-img {
+  border-radius: 4px 4px 0 0;
+}
+
+.lastnews__item-title {
+  background: #ffffff;
+  color: #4a4a4a;
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  width: 270px;
+  border-radius: 0 0 4px 4px;
+  text-align: left;
+  padding: 0 0 0 20.15px;
+}
+
 @media (min-width: 640px) {
   .header__inner {
     min-height: 100px;
@@ -1139,6 +1183,15 @@ body {
 
   .team__btn {
     font-size: 20px;
+  }
+
+  .lastnews__title {
+    font-size: 48px;
+    line-height: 38px;
+  }
+
+  .lastnews__items {
+    padding-top: 60px;
   }
 }
 
@@ -1304,6 +1357,16 @@ body {
   .team__btn {
     font-size: 18px;
   }
+
+  .lastnews__title {
+    font-size: 36px;
+    line-height: 38px;
+  }
+
+  .lastnews__items {
+    padding: 50px 0 40px;
+    margin: 0 50px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1399,6 +1462,20 @@ body {
   .team__text {
     line-height: 24px;
     margin-bottom: 12px;
+  }
+
+  .lastnews {
+    padding: 65px 0 80px;
+  }
+
+  .lastnews__title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .lastnews__items {
+    padding: 96px 0 0;
+    margin: 0 35px;
   }
 }
 
@@ -1552,6 +1629,15 @@ body {
 
   .team__text {
     margin-bottom: 40px;
+  }
+
+  .lastnews {
+    padding: 52px 0 80px;
+  }
+
+  .lastnews__items {
+    padding: 115px 0 0;
+    margin: 0 33px;
   }
 }
 

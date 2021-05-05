@@ -311,7 +311,7 @@
 // Секция projects
 .project {
   text-align: center;
-  padding: 20px 0; 
+  padding: 20px 0;
   background: linear-gradient(180deg, #2b4074 0%, rgba(43, 64, 116, 0) 100%);
   &__title {
     color: #ffffff;
@@ -340,14 +340,14 @@
   &__item-img {
     min-height: 250px;
     background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 4px;
     padding: 12px 14px;
     &:hover {
-      .project__item-inner{
-      opacity: 1;
-    }
+      .project__item-inner {
+        opacity: 1;
+      }
     }
   }
 
@@ -394,8 +394,8 @@ background-size: cover;
 // Секция TEAM
 
 .team {
-padding: 20px 0 40px;
-text-align: center;
+  padding: 20px 0 40px;
+  text-align: center;
 
   // .team__inner
 
@@ -426,13 +426,12 @@ text-align: center;
 
   &__text {
     margin: 0 0 84px 0;
-
   }
 
   // .team__btn
 
   &__btn {
-    border:none;
+    border: none;
     background: $accent;
     text-transform: uppercase;
     border-radius: 3px;
@@ -446,6 +445,70 @@ text-align: center;
 .title {
 }
 
+// Секция Lastnews
+.lastnews {
+  background: #f9f6e5;
+  text-align: center;
+  padding: 40px 0;
+  // .lastnews__title
+
+  &__title {
+    @extend %robotocondensed-400;
+    font-size: 24px;
+    line-height: 38px;
+    color: #4a4a4a;
+  }
+
+  // .lastnews__items
+
+  &__items {
+    padding: 40px 0 40px 5px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+  }
+
+  // .lastnews__item
+
+  &__item {
+    width: 270px;
+    margin: 0 0 20px 0;
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  // .lastnews__item-inner
+
+  &__item-inner {
+  }
+
+  // .lastnews__item-img
+
+  &__item-img {
+    border-radius: 4px 4px 0 0;
+  }
+
+  // .lastnews__item-title
+
+  &__item-title {
+    background: #ffffff;
+    color: $text-color;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    @extend %robotocondensed-700;
+    width: 270px;
+    border-radius: 0 0 4px 4px;
+    text-align: left;
+    padding: 0 0 0 20.15px;
+  }
+}
+.container {
+}
+.title {
+}
 
 @import "portrait-640";
 @import "tablet-portrait-768";

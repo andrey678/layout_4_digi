@@ -235,4 +235,49 @@
   }
   .title {
   }
+
+  .lastnews {
+    padding: 65px 0 80px;
+    // .lastnews__title
+
+    &__title {
+      font-size: 48px;
+      line-height: 56px;
+    }
+
+    // .lastnews__items
+
+    &__items {
+      padding: 96px 0 0;
+      margin: 0 35px;
+    }
+
+    // .lastnews__item
+
+    &__item {
+    }
+
+    // .lastnews__item-inner
+
+    &__item-inner {
+    }
+
+    // .lastnews__item-img
+
+    &__item-img {
+    }
+
+    // .lastnews__item-title
+
+    &__item-title {
+    }
+  }
+  .container {
+  }
+  .title {
+  }
+  .grid {
+  }
+  .grid-item {
+  }
 }

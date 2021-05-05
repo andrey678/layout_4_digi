@@ -21,3 +21,6 @@ document.querySelector('body').classList.add('no-webp');
 //Slick slider
 @@include('slick.js');
 @@include('slickresponsive.js');
+//Masonry
+@@include('masonry.pkgd.js');
+@@include('masonrycontrol.js');
