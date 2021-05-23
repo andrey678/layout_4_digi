@@ -473,8 +473,29 @@
   &__item {
     width: 270px;
     margin: 0 0 20px 0;
+
     &:last-child {
       margin: 0;
+    }
+    &:hover {
+      box-sizing: content-box;
+      border: 10px solid $accent;
+
+      .lastnews__item {
+        position: relative;
+      }
+      .lastnews__item-img {
+        position: relative;
+        top: 2px;
+      }
+      .lastnews__item-title {
+        background: $accent;
+        color: #ffffff;
+        width: 260px;
+        position: absolute;
+        bottom: 20px;
+        left: -1px;
+      }
     }
   }
 
@@ -509,7 +530,241 @@
 }
 .title {
 }
+// Секция Comments
 
+.comments {
+  padding: 60px 0 115px;
+  text-align: center;
+
+  // .comments__inner
+
+  &__inner {
+  }
+
+  // .comments__slider
+
+  &__slider {
+  }
+}
+.container {
+}
+.slider {
+  // .slider__item
+
+  &__item {
+  }
+
+  // .slider__quotes
+
+  &__quotes {
+    margin: 0 auto;
+  }
+
+  // .slider__text
+
+  &__text {
+    padding: 94px 0 20px;
+    @extend %robotocondensed-400;
+    font-size: 24px;
+    line-height: 26px;
+    color: #4a4a4a;
+  }
+
+  &__text-accent {
+    @extend %robotocondensed-700;
+    font-size: 24px;
+    line-height: 26px;
+    color: #2b4074;
+  }
+  // .slider__name
+
+  &__name {
+    @extend %robotocondensed-700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 2px;
+    color: #4a4a4a;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    right: 0;
+    .slick-active {
+      button {
+        background: transparent;
+        border: 1px solid #476e4d;
+      }
+    }
+    button {
+      font-size: 0;
+      border: none;
+      background: $accent;
+      padding: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 0 10px;
+    }
+  }
+}
+
+
+
+  // Секция footer
+  .footer {
+    background: $accent;
+    // .footer__inner
+
+    &__inner {
+      position: relative;
+      padding:85px 0 63px;
+    }
+
+    // .footer__logo
+
+    &__logo {
+      background: $accent;
+      width:230px;
+      height: 60px;
+      position: absolute;
+      top:-30px;
+      left: 25px;
+      right: 0;
+      bottom: 0;
+    }
+
+    // .footer__logo-link
+
+    &__logo-link {
+      position: absolute;
+      left:74px;
+    }
+
+    // .footer__logo-img
+
+    &__logo-img {
+      
+    }
+
+    // .footer__proposal
+
+    &__proposal {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 22px;
+      letter-spacing: 2px;
+      color: #fff;
+      text-align: center;
+      margin:0 0 43px 0;
+    }
+
+    // .footer__social-items
+
+    &__social-items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 144px;
+      justify-content: space-between;
+      margin: 0 0 40px 0;
+    }
+
+    // .footer__social-item
+
+    &__social-item {
+    }
+
+    // .footer__social-icon
+
+    &__social-icon {
+    }
+
+    // .footer__help-items
+
+    &__help-items {
+      display: flex;
+      flex-direction: column;
+      height: 495px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    // .footer__help-item
+
+    &__help-item {
+      display: flex;
+      flex-direction: column;
+      width: 176px;
+      text-align: center;
+    }
+
+    // .footer__help-heading
+
+    &__help-heading {
+      @extend %robotocondensed-700;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 2px;
+      color: #f9f6e5;
+      margin:0 0 18px 0;
+
+    }
+
+    // .footer__help-phone
+
+    &__help-text {
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      color: #fff;
+    }
+
+    // .footer__help-email
+
+    &__help-email {
+    }
+
+    // .footer__help-address
+
+    &__help-address {
+    }
+
+    // .footer__help-howto
+
+    &__help-howto {
+    }
+
+    // .footer__help-digital
+
+    &__help-digital {
+    }
+
+    // .footer__help-price
+
+    &__help-price {
+    }
+
+    // .footer__help-projects
+
+    &__help-projects {
+    }
+
+    // .footer__help-team
+
+    &__help-team {
+    }
+
+    // .footer__help-blog
+
+    &__help-blog {
+    }
+  }
+  .container {
+  }
 @import "portrait-640";
 @import "tablet-portrait-768";
 @import "desktop-1024";

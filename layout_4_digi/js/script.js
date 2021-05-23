@@ -3079,6 +3079,14 @@ $('.top-slider').slick({
       
     ]
   }); ;
+$('.slider').slick({
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: false,
+    prevArrow: false
+    
+  }); ;
 //Masonry
 /*!
  * Masonry PACKAGED v4.2.2
