@@ -25,3 +25,5 @@ document.querySelector('body').classList.add('no-webp');
 //Masonry
 @@include('masonry.pkgd.js');
 @@include('masonrycontrol.js');
+//TOTHETOP
+@@include('tothetop.js');

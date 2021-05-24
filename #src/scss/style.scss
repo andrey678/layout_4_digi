@@ -611,160 +611,187 @@
   }
 }
 
+// Секция footer
+.footer {
+  background: $accent;
+  // .footer__inner
 
+  &__inner {
+    position: relative;
+    padding: 85px 0 63px;
+  }
 
-  // Секция footer
-  .footer {
+  // .footer__logo
+
+  &__logo {
     background: $accent;
-    // .footer__inner
-
-    &__inner {
-      position: relative;
-      padding:85px 0 63px;
-    }
-
-    // .footer__logo
-
-    &__logo {
-      background: $accent;
-      width:230px;
-      height: 60px;
-      position: absolute;
-      top:-30px;
-      left: 25px;
-      right: 0;
-      bottom: 0;
-    }
-
-    // .footer__logo-link
-
-    &__logo-link {
-      position: absolute;
-      left:74px;
-    }
-
-    // .footer__logo-img
-
-    &__logo-img {
-      
-    }
-
-    // .footer__proposal
-
-    &__proposal {
-      font-family: "Roboto", sans-serif;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 22px;
-      letter-spacing: 2px;
-      color: #fff;
-      text-align: center;
-      margin:0 0 43px 0;
-    }
-
-    // .footer__social-items
-
-    &__social-items {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: 144px;
-      justify-content: space-between;
-      margin: 0 0 40px 0;
-    }
-
-    // .footer__social-item
-
-    &__social-item {
-    }
-
-    // .footer__social-icon
-
-    &__social-icon {
-    }
-
-    // .footer__help-items
-
-    &__help-items {
-      display: flex;
-      flex-direction: column;
-      height: 495px;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    // .footer__help-item
-
-    &__help-item {
-      display: flex;
-      flex-direction: column;
-      width: 176px;
-      text-align: center;
-    }
-
-    // .footer__help-heading
-
-    &__help-heading {
-      @extend %robotocondensed-700;
-      font-size: 18px;
-      line-height: 21px;
-      letter-spacing: 2px;
-      color: #f9f6e5;
-      margin:0 0 18px 0;
-
-    }
-
-    // .footer__help-phone
-
-    &__help-text {
-      font-family: "Roboto", sans-serif;
-      font-size: 16px;
-      line-height: 20px;
-      color: #fff;
-    }
-
-    // .footer__help-email
-
-    &__help-email {
-    }
-
-    // .footer__help-address
-
-    &__help-address {
-    }
-
-    // .footer__help-howto
-
-    &__help-howto {
-    }
-
-    // .footer__help-digital
-
-    &__help-digital {
-    }
-
-    // .footer__help-price
-
-    &__help-price {
-    }
-
-    // .footer__help-projects
-
-    &__help-projects {
-    }
-
-    // .footer__help-team
-
-    &__help-team {
-    }
-
-    // .footer__help-blog
-
-    &__help-blog {
-    }
+    width: 230px;
+    height: 60px;
+    position: absolute;
+    top: -30px;
+    left: 25px;
+    right: 0;
+    bottom: 0;
   }
-  .container {
+
+  // .footer__logo-link
+
+  &__logo-link {
+    position: absolute;
+    left: 74px;
   }
+
+  // .footer__logo-img
+
+  &__logo-img {
+  }
+
+  // .footer__proposal
+
+  &__proposal {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 43px 0;
+  }
+
+  // .footer__social-items
+
+  &__social-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 144px;
+    justify-content: space-between;
+    margin: 0 0 40px 0;
+  }
+
+  // .footer__social-item
+
+  &__social-item {
+  }
+
+  // .footer__social-icon
+
+  &__social-icon {
+  }
+
+  // .footer__help-items
+
+  &__help-items {
+    display: flex;
+    flex-direction: column;
+    height: 495px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .footer__help-item
+
+  &__help-item {
+    display: flex;
+    flex-direction: column;
+    width: 176px;
+    text-align: center;
+  }
+
+  // .footer__help-heading
+
+  &__help-heading {
+    @extend %robotocondensed-700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    color: #f9f6e5;
+    margin: 0 0 18px 0;
+  }
+
+  // .footer__help-phone
+
+  &__help-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  // .footer__help-email
+
+  &__help-email {
+  }
+
+  // .footer__help-address
+
+  &__help-address {
+  }
+
+  // .footer__help-howto
+
+  &__help-howto {
+  }
+
+  // .footer__help-digital
+
+  &__help-digital {
+  }
+
+  // .footer__help-price
+
+  &__help-price {
+  }
+
+  // .footer__help-projects
+
+  &__help-projects {
+  }
+
+  // .footer__help-team
+
+  &__help-team {
+  }
+
+  // .footer__help-blog
+
+  &__help-blog {
+  }
+}
+.container {
+}
+
+.tothetop {
+  padding: 56px 0 30px;
+  background: #f9f6e5;
+  // .tothetop__inner
+
+  &__inner {
+    
+  }
+
+  // .tothetop__link
+
+  &__link {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    @extend %robotocondensed-400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    color: #4a4a4a;
+    }
+
+  // .tothetop__arrow
+
+  &__arrow {
+  display: block;
+  margin: 21px auto 0;
+  }
+}
+
 @import "portrait-640";
 @import "tablet-portrait-768";
 @import "desktop-1024";
